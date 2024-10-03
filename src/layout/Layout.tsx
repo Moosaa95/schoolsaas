@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom"
 import { Footer, Header, Hero } from "../components"
 
 type Props = {
@@ -10,7 +11,8 @@ export default function Layout({children}: Props) {
             <Header />
             <Hero />
             <div className="container flex-1 py-10 mx-auto">
-                {children}
+                {/* {children} */}
+                <Outlet />
             </div>
             <Footer />
         </div>
